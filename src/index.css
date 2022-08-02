@@ -1,0 +1,337 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: gray;
+  text-align: center;
+
+}
+.background{
+  background-image: url("./Img/forestBG.webp");
+  background-size: cover;
+  filter: blur(4px);
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  top: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+div{
+  display: inline-block;
+  vertical-align: top;
+}
+.container{
+  border: 1px solid rgb(71, 71, 71);
+  border-radius: 5px;
+  background-color: rgba(107, 107, 110, 0.685);
+  box-shadow: 0 0 10px rgb(71, 71, 71);  
+  display: inline-block;
+  vertical-align: bottom;
+}
+.mainContainer{
+  min-height: 80vh;
+  width: 90%;
+  width: 90vw;  
+  margin-top: 5vh;
+  box-sizing: border-box;
+  padding: 20px;
+  position: relative;
+  margin-left: 5vw;
+  text-align: left;  
+}
+.sideMenu{
+  position: absolute;
+  top: 10vh;
+  left: -260px;
+  width: 280px;
+  height: 80vh;    
+  z-index: 2;
+  transition: 500ms;
+  overflow: hidden;
+}
+.sideMenu:hover{
+  left: 0px;
+}
+.sideMenuButton{
+  height: 40px;
+  width: 100%;
+  background-color: none;  
+  user-select: none;
+  line-height: 40px;
+  border-bottom: 1px solid rgb(84, 84, 107);
+}
+.sideMenuButton:hover{
+  background-color: none;  
+  background-color: rgb(139, 139, 158);
+}
+.imageContainer{
+  height: 200px;
+  width: 200px;
+  margin: 5px;
+  vertical-align: top;
+  transition: 500ms;  
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.imageContainer:hover{
+  margin-top: -2px;
+}
+.imageContainer img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.imageName{
+  width: 100%;
+  text-align: center;
+  user-select: none;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  z-index: inherit;
+  font-weight: 1000;
+  color: rgb(12, 12, 73);  
+  -webkit-text-stroke-width: .25px;
+  -webkit-text-stroke-color: white; 
+}
+.addImageButton{
+  font-size: 140px;
+  line-height: 160px;
+  user-select: none;
+  cursor: pointer;
+  text-align: center;
+}
+.addImageButton:hover{
+  background-color: rgb(146, 149, 173);
+}
+.imageMenu{
+  position: fixed;
+  height: 440px;
+  width: 760px;
+  top: 20px;
+  left: calc(50vw - 400px);
+  background-color: rgb(117, 124, 138);
+}
+.imageMenu img{
+  height: 100%;
+  width: 100%;  
+}
+.imageDiv{
+  height: 400px;
+  width: 400px;
+  border-radius:5px;
+  margin:5px;
+  margin-top:20px;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid blue;
+}
+.imageDiv img{
+  object-fit: contain;  
+}
+.circleButton{
+  height: 30px;
+  width: 30px;
+  position: absolute;  
+  border-radius: 15px;
+  line-height: 25px;
+  color: gray;
+  font-size: 20px;
+  bottom: 5px;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  float: right;
+}
+.addButton{
+  background-color: rgb(197, 255, 197);
+  right: 5px;
+}
+.addButton:hover{
+  color: white;
+  background-color: green;
+}
+.deleteButton{
+  background-color: rgb(255, 179, 179);
+  right: 45px;
+}
+.deleteButton:hover{
+  color: white;
+  background-color: red;
+}
+.imageMenuInputDiv{
+  margin: 5px;
+  margin-top: 20px;
+  height: 400px;
+  width: 300px;
+  position: relative;
+}
+.inputField{
+  width: 100%;
+  height: 30px;
+  border-radius: 2px;
+  background-color: rgb(167, 164, 164);
+  outline: none;
+  border: none;
+  padding: 0 10px 0 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.imageNotesInput{
+  min-width: 100%;
+  max-width: 100%;
+  height: 280px;
+  box-sizing: border-box;
+  padding-top: 5px;
+}
+.menuButtonHolder{
+  width: 100%;  
+  position: absolute;
+  bottom:0;
+  left: 0;
+  text-align: center;  
+}
+.flexDIvSB{
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuButton{
+  width: 45%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  color: rgb(32, 0, 73);  
+  background-color: rgb(255, 240, 157);
+  cursor: pointer;
+  transition: 500ms;
+  line-height: 30px;
+  text-align: center;
+}
+.menuButton:hover{
+  background-color: gold;
+  box-shadow: 0 0 10px gold;
+}
+.closeButton{
+  
+  height: 30px;
+  width: 30px;
+
+  background-color: rgb(218, 172, 172);
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+  
+  position: absolute;
+  top: 5px;
+  right: 5px;
+    
+  cursor: pointer;
+  user-select: none;
+  
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  box-sizing: border-box;
+  padding-bottom: 5px;
+}
+.closeButton:hover{
+  background-color: rgb(231, 114, 114);
+}
+.Gray{
+  border: 2px solid gray;
+}
+.Red{
+  border: 2px solid Red;
+}
+.Orange{
+  border: 2px solid Orange;
+}
+.Yellow{
+  border: 2px solid Yellow;
+}
+.Green{
+  border: 2px solid rgb(0, 224, 0);
+}
+.Blue{
+  border: 2px solid blue;
+}
+.LightBlue{
+  border: 2px solid rgb(206, 206, 216);  
+}
+.Purple{
+  border: 2px solid purple;
+}
+.hidden{
+  display: none;
+}
+.pageRangeButtonHolder{
+  width: 100%;
+
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  
+  text-align: center;
+  display: flex ;
+  justify-content: center;
+}
+.pageRangeButtons{
+  display: flex ;
+  justify-content: space-between;
+  width: 600px;
+}
+
+.pageRangeButton{
+  width: 30%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  color: rgb(32, 0, 73);  
+  background-color: rgb(255, 240, 157);
+  cursor: pointer;
+  transition: 300ms;
+  line-height: 30px;
+  text-align: center;
+  user-select: none;
+}
+.pageRangeButton:hover{
+  background-color: gold;
+  box-shadow: 0 0 10px gold;
+}
+.topBar{
+  width: 40%;
+  margin-left: 30%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.searchField{
+  width: 80%;
+}
+.imageLarge{
+  height: 90%;
+  width: 90%;
+  position: fixed;
+  left: 5%;
+  top: 5%;
+  z-index: 2;
+}
+.imageLarge img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}

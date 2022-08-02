@@ -1,0 +1,245 @@
+.calendarCenter{
+    width: 100%;
+    text-align: center;
+}
+.calendarContainer{    
+    text-align: center;
+    background-color: rgb(152, 156, 179);    
+    border-radius: 5px;
+    width: 400px;
+    
+}
+.calendarOuter{
+    background-color: rgba(218, 218, 255, 0.562);
+    margin-top: 40px;
+    width: auto;
+    border-radius: 4px;
+    overflow: hidden;    
+}
+.calendar{
+    --height:120px;
+    width: var(calc(--height * 7));
+    width: 850px;        
+ 
+}
+.calendarDay{
+    height: var(--height);
+    width: var(--height);
+    border-bottom: 1px solid rgba(72, 72, 255, 0.541);
+    
+    overflow-y: auto;
+}
+.calendarDay:hover{
+    
+    background-image: linear-gradient(rgba(168, 168, 255, 0.712), rgba(159, 159, 255, 0.103));
+}
+.title{        
+    display: block;
+    font-size: 25px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.568), rgba(255, 255, 255, 0.13));
+    
+}
+.dayDisplay{
+    user-select: none;
+    font-size: 12px;
+}
+.eventMenu{
+    position: absolute;
+    height: 440px;
+    width: 760px;
+    top: 40px;
+    left: calc(50vw - 400px);
+}
+.contactDiv{
+    height: 95%;
+    width: 50%;
+    border:1px solid blue;
+    border-radius: 5px;
+    float: left;
+    margin:10px ;
+    box-sizing: border-box;
+    padding: 10px;
+}
+#eventContactImage{
+    width: 100%;
+    object-fit: contain;    
+}
+.contactDiv textarea{
+    height: 110px;
+    min-width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-top: 5px;
+}
+.eventMenuData{
+    width: 45%;
+    float: left;
+    margin-top: 10px;    
+}
+.eventMenuData textarea{
+    height: 260px;
+    max-width: 100%;
+    min-width: 100%;
+    box-sizing: border-box;
+    padding-top: 5px;
+}
+.width90{
+    width: 90%;
+    float: left;
+}
+.eventContactImg{
+    height: 200px;
+    width: 200px;
+}
+.bottomRow{    
+    width: 56%;  
+    position: absolute;
+    bottom:10px;
+    right: -70px;
+    display: flex;
+    justify-content: space-between;
+}
+.event{
+    border-radius: 3px;
+    border:1px solid blue;
+    background-color: rgb(185, 185, 255);
+    cursor: pointer;
+    margin: 2px 5px     2px 5px;
+    padding: 2px 5px 2px 5px;
+    font-size: 11px;
+    
+}
+.event:hover{
+    background-color: rgb(140, 140, 255);
+}
+.eventNone{
+    border:1px solid rgb(163, 163, 163);
+    background-color: rgb(204, 207, 230);
+}
+.eventNone:hover{    
+    background-color: rgb(207, 207, 207);
+}
+.eventGray{
+    border:1px solid gray;
+    background-color: rgb(207, 207, 207);
+}
+.eventGray:hover{    
+    background-color: rgb(161, 161, 161);
+}
+.eventRed{
+    border:1px solid red;
+    background-color: rgb(252, 172, 172);
+}
+.eventRed:hover{
+    background-color: rgb(255, 124, 124);
+}
+.eventOrange{
+    border:1px solid orange;
+    background-color: rgb(253, 227, 179);
+}
+.eventOrange:hover{    
+    background-color: rgb(255, 205, 113);
+}
+.eventYellow{
+    border:1px solid yellow;
+    background-color: rgb(253, 253, 197);
+}
+.eventYellow:hover{    
+    background-color: rgb(255, 255, 151);
+}
+.eventLightGreen{
+    border:1px solid green;
+    background-color: rgb(107, 247, 107);
+}
+.eventLightGreen:hover{    
+    background-color: rgb(102, 196, 102);
+}
+.eventGreen{
+    border:1px solid green;
+    background-color: rgb(158, 199, 158);
+}
+.eventGreen:hover{    
+    background-color: rgb(102, 196, 102);
+}
+.eventDarkGreen{
+    border:1px solid rgb(61, 80, 61);
+    background-color: rgba(150, 170, 150, 0.322);
+}
+.eventDarkGreen:hover{    
+    background-color: rgb(90, 104, 90);
+}
+.eventBlue{
+    border:1px solid blue;
+    background-color: rgb(179, 179, 255);
+}
+.eventBlue:hover{    
+    background-color: rgb(109, 109, 255);
+}
+.eventLightBlue{
+    border:1px solid rgb(145, 180, 253);
+    background-color: rgb(174, 193, 255);
+}
+.eventLightBlue:hover{
+    border:1px solid rgb(153, 153, 255);
+    background-color: rgba(137, 164, 255, 0.767);
+}
+.eventClear{
+    border:1px solid rgb(184, 186, 255);
+    background-color: rgba(204, 207, 230, 0);
+}
+.eventClear:hover{
+    border:1px solid rgb(153, 153, 255);
+    background-color: rgba(183, 183, 241, 0.829);
+}
+.eventPurple{
+    border:1px solid rgb(214, 173, 238);
+    background-color: rgb(214, 200, 228);
+}
+.eventPurple:hover{    
+    background-color: rgb(204, 104, 204);
+}
+
+.event .hoverMenu{
+    display: none;
+}
+
+.event:hover .hoverMenu{
+    
+    display: inline-block;
+    position: absolute;
+    
+}
+.eventHoverMenu{
+    height: 200px;
+    width: 200px;
+}
+.LightBlue{
+    border: 2px solid rgb(180, 180, 255);
+    background-color: rgb(129, 139, 167);
+}
+.verticalDivider{
+ width: 2px;
+ background-color: rgba(255, 255, 255, 0.288);   
+ height: 30px;
+ margin-top: 5px;
+ display: inline-block;
+ vertical-align: top;
+}
+.bottomButton{
+    width: 50%;
+    height: 40px;
+    user-select: none;    
+    line-height: 40px;
+}
+.bottomButton:hover{
+    
+    background-image: linear-gradient(rgba(255, 255, 255, 0.411),rgba(255, 255, 255, 0));
+}
+.calendarBottomRow{
+    width: 100%;        
+    display: flex;
+    justify-content: space-between;
+  }

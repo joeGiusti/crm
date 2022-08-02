@@ -1,0 +1,41 @@
+.App{
+    --blueColor:rgba(0, 123, 255, 0.478);
+}
+.imageDropZone{
+    height: 300px;
+    width: 300px;
+    background-color: var(--blueColor);
+    margin: 10px;
+    float: left;
+}
+.imageDiv{
+    height: 400px;
+    width: 240px;
+    display: inline-block;
+    margin: 2px;
+    border: 1px solid var(--blueColor);    
+    object-fit: contain;
+}
+.imageDiv img{
+    width: 200px;
+    height: 100%;
+    object-fit: contain;
+}
+.imageDivLarge{
+    height: 800px;
+    width: 480px;
+}
+.videoDiv{
+    height: 26vw;
+    width: 19vw;
+    border: 1px solid rgba(0, 115, 255, 0.505);
+    border-radius: 3px;
+    display: inline-block;
+}
+.videoDiv iframe{
+    width: 100%;
+    height: 100%;
+}
+.blured{
+    filter: blur(50px);
+}
