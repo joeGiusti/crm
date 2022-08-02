@@ -48,7 +48,7 @@ function Gallery() {
 
     useEffect(()=>{
         createVideoArray()    
-        setAnArray(Array.apply(null, Array(15)))
+        setAnArray(Array.apply(null, Array(10)))
     },[])
 
 
